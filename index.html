@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020818" />
+    <title>Happy Birthday ✨ Painite 💖✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ─── Particle Canvas Background ─── -->
+    <div id="tsparticles"></div>
+
+    <!-- ─── Music Player ─── -->
+    <div class="music-player" id="musicPlayer" aria-label="Music player">
+      <button class="music-btn" id="musicToggle" aria-label="Play music">
+        <span class="music-icon" id="musicIcon">♪</span>
+      </button>
+      <div class="music-info" id="musicInfo">
+        <span class="music-title" id="musicTitle">You Raise Me Up</span>
+        <span class="music-artist">Westlife</span>
+      </div>
+      <audio id="bgMusic" loop>
+        <!-- Westlife – You Raise Me Up (free/public domain stream via archive.org) -->
+        <source src="music/song.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <!-- ─── Hero Section ─── -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-pre reveal">Today is a very special day</p>
+        <h1 class="hero-name reveal">
+          <span class="sparkle-emoji">✨</span>
+          <span class="name-text">Painite</span>
+          <span class="sparkle-emoji">💖✨</span>
+        </h1>
+        <p class="hero-sub reveal">Happy Birthday, my love 🎂</p>
+        <div class="hero-divider reveal"></div>
+        <p class="hero-tagline reveal">
+          You are rarer than the rarest gem,<br />
+          more precious than anything in this world.
+        </p>
+        <button class="cta-btn reveal" id="confettiBtn">
+          Celebrate 🎉
+        </button>
+      </div>
+      <div class="scroll-hint reveal">
+        <span>scroll down</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ─── Message Section ─── -->
+    <section class="message-section" id="message">
+      <div class="section-inner">
+        <h2 class="section-title reveal">A Letter From My Heart</h2>
+        <div class="letter-card reveal">
+          <p class="letter-text">
+            My dearest <em>Painite</em>,
+          </p>
+          <p class="letter-text">
+            On this day that the universe decided to gift the world with you,
+            I find myself overwhelmed with a gratitude so deep it has no floor.
+            You are not just the person I love — you are the reason certain
+            songs hit differently, the reason quiet evenings feel full, the
+            reason I believe in something beautiful even on the hardest days.
+          </p>
+          <p class="letter-text">
+            You carry light in the way you laugh, in the way you care, in the
+            way you exist so unapologetically, so completely, so
+            <em>you</em>. Being loved by you is the greatest honour of my life,
+            and loving you — that is my favourite thing I have ever done.
+          </p>
+          <p class="letter-text">
+            Today I wish you every joy your heart can hold. I wish you
+            warmth in every room you walk into, peace in every silence,
+            and laughter that fills your chest until it aches. I wish you
+            everything you deserve — which is everything.
+          </p>
+          <p class="letter-text">
+            Happy birthday, my love. Every year with you is a year I would
+            choose a thousand times over.
+          </p>
+          <p class="letter-signature">Forever yours 💙</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Reasons Section ─── -->
+    <section class="reasons-section" id="reasons">
+      <div class="section-inner">
+        <h2 class="section-title reveal">Why You Are Everything</h2>
+        <div class="reasons-grid">
+          <div class="reason-card reveal">
+            <div class="reason-icon">💙</div>
+            <h3>Your Warmth</h3>
+            <p>The way you make everyone around you feel seen and loved is a superpower only you possess.</p>
+          </div>
+          <div class="reason-card reveal">
+            <div class="reason-icon">✨</div>
+            <h3>Your Light</h3>
+            <p>You walk into a room and something shifts — brighter, softer, fuller. That is entirely you.</p>
+          </div>
+          <div class="reason-card reveal">
+            <div class="reason-icon">👑</div>
+            <h3>Your Strength</h3>
+            <p>You carry so much with such grace. Your resilience is one of the most beautiful things about you.</p>
+          </div>
+          <div class="reason-card reveal">
+            <div class="reason-icon">🌙</div>
+            <h3>Your Depth</h3>
+            <p>Conversations with you feel like diving into the ocean — there is always more, always deeper, always more to discover.</p>
+          </div>
+          <div class="reason-card reveal">
+            <div class="reason-icon">💫</div>
+            <h3>Your Laugh</h3>
+            <p>Your laugh is my favourite sound in the world. It is pure and real and it makes everything else disappear.</p>
+          </div>
+          <div class="reason-card reveal">
+            <div class="reason-icon">🤍</div>
+            <h3>Simply You</h3>
+            <p>Beyond all the words, it is just — you. All of you. Exactly as you are. That is more than enough.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Timeline Section ─── -->
+    <section class="timeline-section" id="timeline">
+      <div class="section-inner">
+        <h2 class="section-title reveal">Our Story</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>The Beginning</h3>
+              <p>The moment I first knew — that something rare had just walked into my life.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Every Day Since</h3>
+              <p>Every ordinary day made extraordinary just because you were in it.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Today</h3>
+              <p>Your birthday — a day I get to celebrate the most incredible person I know.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Every Tomorrow</h3>
+              <p>All the adventures, laughter, and love still ahead of us. I cannot wait.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Final Wish Section ─── -->
+    <section class="wish-section" id="wish">
+      <div class="section-inner">
+        <div class="wish-content">
+          <div class="cake-animation" aria-hidden="true">
+            <div class="cake-layers">
+              <div class="cake-candle">
+                <div class="flame"></div>
+              </div>
+              <div class="cake-top"></div>
+              <div class="cake-mid"></div>
+              <div class="cake-base"></div>
+            </div>
+          </div>
+          <h2 class="wish-title reveal">
+            <span class="sparkle-emoji">✨</span>
+            Happy Birthday
+            <span class="sparkle-emoji">✨</span>
+          </h2>
+          <p class="wish-name reveal">
+            <span class="sparkle-emoji">✨</span>
+            <span class="name-text">Painite</span>
+            <span class="sparkle-emoji">💖✨</span>
+          </p>
+          <p class="wish-sub reveal">
+            May this year be the most beautiful chapter of your life yet.
+          </p>
+          <button class="burst-btn reveal" id="burstBtn">
+            🎊 Send Love &amp; Wishes 🎊
+          </button>
+        </div>
+      </div>
+      <div class="floating-hearts" aria-hidden="true" id="floatingHearts"></div>
+    </section>
+
+    <!-- ─── Footer ─── -->
+    <footer class="site-footer">
+      <p>Made with 💙 just for you · <span id="year"></span></p>
+    </footer>
+
+    <!-- ─── Scripts ─── -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
