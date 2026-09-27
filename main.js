@@ -292,20 +292,30 @@ const musicTitle  = document.getElementById('musicTitle');
 
 let isPlaying = false;
 
-// Playlist — Westlife love songs via free/public sources
-// We use a YouTube-free audio fallback: if local music/song.mp3 exists, it plays;
-// otherwise we gracefully show a message.
+// Playlist — actual files in the music/ folder
 const playlist = [
-  { title: 'You Raise Me Up',   artist: 'Westlife' },
-  { title: 'Flying Without Wings', artist: 'Westlife' },
-  { title: 'Swear It Again',    artist: 'Westlife' },
+  {
+    title:  'Swear It Again',
+    artist: 'Westlife',
+    file:   'music/Westlife - Swear It Again (Official Video).mp3',
+  },
+  {
+    title:  'All of Me',
+    artist: 'John Legend',
+    file:   'music/John Legend - All of Me (Official Video).mp3',
+  },
 ];
 let currentTrack = 0;
 
 function updateMusicMeta() {
-  musicTitle.textContent = playlist[currentTrack].title;
-  document.querySelector('.music-artist').textContent = playlist[currentTrack].artist;
+  const track = playlist[currentTrack];
+  musicTitle.textContent = track.title;
+  document.querySelector('.music-artist').textContent = track.artist;
+  bgMusic.src = track.file;
 }
+
+// Initialise with first track
+updateMusicMeta();
 
 function toggleMusic() {
   if (isPlaying) {
@@ -326,10 +336,11 @@ function toggleMusic() {
 
 musicToggle.addEventListener('click', toggleMusic);
 
-// When song ends, try next in playlist meta (single file scenario — just loops)
+// When a song ends, advance to next track and auto-play it
 bgMusic.addEventListener('ended', () => {
   currentTrack = (currentTrack + 1) % playlist.length;
   updateMusicMeta();
+  bgMusic.play().catch(() => {});
 });
 
 // Try autoplay after first user interaction with the page
